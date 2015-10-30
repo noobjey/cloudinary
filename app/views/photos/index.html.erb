@@ -1,0 +1,97 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">I am not real confident I know what I'm talking about!??!</h3>
+  </div>
+  <div class="panel-body">
+    <p>So don't get in a bar fight because your mouthing off about what you learned about Carrierwave and Cloudinary
+    and someone called you out on it and said your wrong. Documentation links below, their actually not to bad until
+    you try to make it work between 11pm and 4am cause you said you would have it done tomorrow.</p>
+  </div>
+</div>
+
+
+<div class="panel panel-default">
+
+  <div class="panel-heading">
+    <p>What are they?</p>
+    <p><a href="http://cloudinary.com">Cloudinary</a> and
+    <a href="https://github.com/carrierwaveuploader/carrierwave">CarrierWave</a></p>
+  </div>
+
+  <div class="panel-body">
+    <div class="panel-breaker">
+      <h3>CarrierWave</h3>
+      <h4>What CarrierWave Says:</h4>
+
+      <p>This gem provides a simple and extremely flexible way to upload files from Ruby applications.
+        It works well with Rack based web applications, such as Ruby on Rails.</p>
+
+      <h4>What Jason Thinks:</h4>
+
+      <p>It makes it so you can pretend an uploaded file is just another ActiveRecord field like <code>string, boolean,
+        integer</code> whatever.</p>
+    </div>
+
+    <div class="panel-breaker">
+      <h3>Cloudinary</h3>
+      <h4>What Cloudinary Says:</h4>
+
+      <p>Cloudinary is the image back-end for web and mobile developers.
+        An end-to-end solution for all your image-related needs.</p>
+
+      <h4>What Jason Thinks:</h4>
+
+      <p>An image hosting site (CDN) for dummies.</p>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="panel panel-default">
+
+  <div class="panel-heading">
+    <p>Where are we going?</p>
+  </div>
+
+  <div class="panel-body">
+    <div class="panel-breaker">
+      <h3>CRUD some photos</h3>
+      <h4>Whats been done?</h4>
+
+      <ul>
+        <li>Create a photo model: <code>rails g model photo name:string image:string</code></li>
+        <li>Database stuff: <code>rake db:create</code> <code>rake db:migrate</code></li>
+        <li>routes.rb: <code>resources :photos</code> <code>root "photos#index"</code></li>
+        <li>Controller stuff: <code>rails g controller photos</code></li>
+        <li>
+          <small>I typed real stupid or .coffee files scare me and I want that stuff to go away
+            <code>rails d controller photos</code></small>
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="panel-breaker">
+      <h3>What does this have to do with Cloud Hosting?</h3>
+      <p>So the only thing we have done so far that has anything to do with Hosting images on Cloudinary is our model
+        creation. <code>image:string</code>. This is a Carrierwave thing. This is what Carrierwave does. It stores a
+      string that looks suspiciously like a uri and magically turns it into a bunch of objects (or object looking things)
+        when you access it in your code. You will see if we make it that far.</p>
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-danger">
+  <div class="panel-heading">
+    <h3 class="panel-title">End of Branch</h3>
+  </div>
+  <div class="panel-body">
+    <h3>I want to start from here:</h3>
+    <p>Then do this<code>git clone https://github.com/noobjey/cloudinary.git --branch 1-what-are-they</code></p>
+    <p>Next do this <code>bundle</code> and this <code>rake db:create</code> and this <code>rake db:migrate</code> and <strong>start
+      postgres around now</strong> and then do this <code>rails s</code> and then click on <strong><a href="localhost:3000"> I Hope
+      This Works.</a></strong>
+    </p>
+  </div>
+</div>
